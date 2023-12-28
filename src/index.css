@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom Global CSS */
+.container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
