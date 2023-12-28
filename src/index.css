@@ -17,3 +17,27 @@ code {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+/* Navbar */
+.nav-item {
+  padding-left: 3rem;
+}
+
+.nav-link {
+  color: #b5b5b5 !important;
+  font-size: larger !important;
+  font-weight: 500 !important;
+}
+
+/* Background Colors */
+.bg-main {
+  background-color: white;
+}
+
+.bg-alt {
+  background-color: gainsboro;
+}
+
+.bg-bold {
+  background-color: dimgray;
+}
