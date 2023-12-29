@@ -1,0 +1,63 @@
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 8px;
+    border: 5px solid white !important;
+  }
+
+td {
+    font-size: 60px;
+    color: ghostwhite !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    transition: 0.5s;
+}
+
+td.number {
+    background-color: #7a7a7a !important;
+}
+
+td.option {
+    color:rgb(29, 29, 29) !important;
+    background-color: #cecece !important;
+    font-weight: 600;
+}
+
+td.operation {
+    background-color: rgb(231, 144, 82) !important;
+    text-align: center;
+    font-weight: 600;
+}
+
+td.equals {
+    background-color: goldenrod !important;
+    font-weight: 800;
+}
+
+td.hoverable-column:hover {
+    background-color:ghostwhite;
+    opacity : 0.6
+}
+
+/* Apply a border to the right of all but the last column */
+table th:not(:last-child),
+table td:not(:last-child) {
+ border-right: 5px solid white;
+}
+
+/* Apply a border to the bottom of all but the last row */
+table>thead>tr:not(:last-child)>th,
+table>thead>tr:not(:last-child)>td,
+table>tbody>tr:not(:last-child)>th,
+table>tbody>tr:not(:last-child)>td,
+table>tfoot>tr:not(:last-child)>th,
+table>tfoot>tr:not(:last-child)>td,
+table>tr:not(:last-child)>td,
+table>tr:not(:last-child)>th,
+table>thead:not(:last-child),
+table>tbody:not(:last-child),
+table>tfoot:not(:last-child) {
+ border-bottom: 5px solid white;
+}
