@@ -13,6 +13,15 @@ td {
     margin-left: 2rem !important;
     margin-right: 2rem !important;
     transition: 0.5s;
+    
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+td.display {
+    text-align: end;
+    color: black !important;
 }
 
 td.number {

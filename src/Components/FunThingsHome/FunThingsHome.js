@@ -1,4 +1,3 @@
-import Calculator from '../Calculator/Calculator';
 import calculatorPNG from '../../Assets/Images/calculator.png';
 
 import './FunThingsHome.css'
