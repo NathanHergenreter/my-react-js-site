@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import Calculator from "./Components/Calculator/Calculator";
 import FunThingsHome from "./Components/FunThingsHome/FunThingsHome";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fun-things" element={<FunThingsHome />} />
+        <Route path="/fun-things/calculator" element={<Calculator />} />
       </Routes>
     </BrowserRouter>
   );

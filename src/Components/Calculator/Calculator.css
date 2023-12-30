@@ -33,6 +33,7 @@ td.operation {
 
 td.equals {
     background-color: goldenrod !important;
+    text-align: center;
     font-weight: 800;
 }
 

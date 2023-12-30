@@ -1,0 +1,20 @@
+.hero-image {
+    transition: .5s;
+}
+
+.hero-image:hover {
+    opacity: 0.5;
+}
+
+.fun-thing-text {
+    color: black !important;
+}
+
+.fun-thing-text:hover {
+    text-decoration: underline;
+    color: rgb(43, 43, 43) !important;
+}
+
+a:not([class]) {
+    text-decoration: none;
+}

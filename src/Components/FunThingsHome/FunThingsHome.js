@@ -1,9 +1,12 @@
-import Calculator from "../Calculator/Calculator";
+import Calculator from '../Calculator/Calculator';
+import calculatorPNG from '../../Assets/Images/calculator.png';
+
+import './FunThingsHome.css'
 
 function FunThingsHome() {
     return (
-    <div className="bg-main">
-        <div className="container">
+    <div className='bg-main'>
+        <div className='container'>
             <h1>Fun Things</h1>
             <p>Here are some fun things I've made in ReactJs.</p>
             <p>
@@ -11,7 +14,13 @@ function FunThingsHome() {
                 They also give me an opportunity to work on my styling - feel free to critique them, I probably won't be hearing whatever feedback you have in your head anyway :).
             </p>
         </div>
-        <Calculator />
+        <div className='container text-center'>
+            <a href='/fun-things/calculator'><img className='mx-auto d-block py-3 hero-image' src={calculatorPNG} alt='Calculator'></img></a>
+            <a href='/fun-things/calculator'><h4 className='fun-thing-text'>Calculator</h4></a>
+            <a href='/fun-things/calculator'><p className='fun-thing-text'>
+                This is a simple calculator. It functions just as a normal calculator does, which I'm hoping you already know how to use.
+            </p></a>
+        </div>
     </div>
     );
 }
