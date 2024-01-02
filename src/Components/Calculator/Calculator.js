@@ -14,38 +14,45 @@ function Calculator() {
     }
 
     function handleClear() {
+        setCurrentValue(0);
         setCurrentNumber('');
     }
 
     function handleOperation(operation) {
-        console.log('Pre', currentValue);
-        if(!currentValue) {
+        setCurrentOperation(operation);
+
+        if(currentValue === 0) {
             setCurrentValue(parseFloat(currentNumber));
-            setCurrentOperation(operation);
-            console.log(currentValue); // TODO - remove
-            console.log(currentOperation); // TODO - remove
-            handleClear();
-            return;
+        }
+        else {
+            performOperation();
         }
 
-        switch(operation) {
-            case '+':
-                setCurrentValue(currentValue + parseFloat(currentNumber));
-                break;
-            case '-':
-                setCurrentValue(currentValue - parseFloat(currentNumber));
-            case '*':
-                setCurrentValue(currentValue * parseFloat(currentNumber));
-                break;
-            case '/':
-                setCurrentValue(currentValue / parseFloat(currentNumber));
-        }
-
-        setCurrentNumber(currentValue.toString());
+        setCurrentNumber('');
     }
 
-    function handleEquals() {
-        setCurrentNumber(parseFloat(currentNumber))
+    function performOperation() {
+        const newValue = parseFloat(currentNumber)
+        switch(currentOperation) {
+            case '+':
+                setCurrentValue(currentValue + newValue);
+                break;
+            case '-':
+                setCurrentValue(currentValue - newValue);
+                break;
+            case '*':
+                setCurrentValue(currentValue * newValue);
+                break;
+            case '/':
+                setCurrentValue(currentValue / newValue);
+                break;
+            default:
+                break;
+        }
+
+        console.log(currentValue);
+        setCurrentOperation('');
+        setCurrentNumber(currentValue.toString())
     }
 
     return (
@@ -87,7 +94,7 @@ function Calculator() {
                         <td className='number'></td>
                         <td className='hoverable-column number' onClick={() => handleNumber(0)}>0</td>
                         <td className='number'></td>
-                        <td className='hoverable-column equals'>=</td>
+                        <td className='hoverable-column equals' onClick={performOperation}>=</td>
                     </tr>
                 </tbody>
             </table>
