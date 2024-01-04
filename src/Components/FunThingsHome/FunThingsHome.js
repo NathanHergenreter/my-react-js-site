@@ -20,6 +20,13 @@ function FunThingsHome() {
                 This is a simple calculator. It functions just as a normal calculator does, which I'm hoping you already know how to use.
             </p></a>
         </div>
+        <div className='container text-center'>
+            <a href='/fun-things/tic-tac-toe'><img className='mx-auto d-block py-3 hero-image' src={calculatorPNG} alt='Tic-Tac-Toe'></img></a>
+            <a href='/fun-things/tic-tac-toe'><h4 className='fun-thing-text'>Tic-Tac-Toe</h4></a>
+            <a href='/fun-things/tic-tac-toe'><p className='fun-thing-text'>
+                Tic-Tac-Toe! I hope you know the rules because I don't feel like telling you.
+            </p></a>
+        </div>
     </div>
     );
 }

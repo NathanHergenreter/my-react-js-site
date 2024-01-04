@@ -1,11 +1,11 @@
-table {
+.calculator-table {
     border-spacing: 0;
     border-collapse: separate;
     border-radius: 8px;
     border: 5px solid white !important;
   }
 
-td {
+.calculator-button {
     font-size: 60px;
     color: ghostwhite !important;
     padding-left: 2rem !important;
@@ -54,28 +54,28 @@ td.equals {
     font-weight: 800;
 }
 
-td.hoverable-column:hover {
+td.hoverable:hover {
     background-color:ghostwhite;
     opacity : 0.6
 }
 
 /* Apply a border to the right of all but the last column */
-table th:not(:last-child),
-table td:not(:last-child) {
+.calculator-table th:not(:last-child),
+.calculator-table td:not(:last-child) {
  border-right: 5px solid white;
 }
 
 /* Apply a border to the bottom of all but the last row */
-table>thead>tr:not(:last-child)>th,
-table>thead>tr:not(:last-child)>td,
-table>tbody>tr:not(:last-child)>th,
-table>tbody>tr:not(:last-child)>td,
-table>tfoot>tr:not(:last-child)>th,
-table>tfoot>tr:not(:last-child)>td,
-table>tr:not(:last-child)>td,
-table>tr:not(:last-child)>th,
-table>thead:not(:last-child),
-table>tbody:not(:last-child),
-table>tfoot:not(:last-child) {
+.calculator-table>thead>tr:not(:last-child)>th,
+.calculator-table>thead>tr:not(:last-child)>td,
+.calculator-table>tbody>tr:not(:last-child)>th,
+.calculator-table>tbody>tr:not(:last-child)>td,
+.calculator-table>tfoot>tr:not(:last-child)>th,
+.calculator-table>tfoot>tr:not(:last-child)>td,
+.calculator-table>tr:not(:last-child)>td,
+.calculator-table>tr:not(:last-child)>th,
+.calculator-table>thead:not(:last-child),
+.calculator-table>tbody:not(:last-child),
+.calculator-table>tfoot:not(:last-child) {
  border-bottom: 5px solid white;
 }

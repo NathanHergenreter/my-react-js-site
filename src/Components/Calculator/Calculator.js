@@ -100,43 +100,43 @@ function Calculator() {
                 </div>
                 <div className='col-6'>
                     <div className='d-flex justify-content-center align-items-center h-100'>
-                        <table className='table' style={{width: 'auto'}}>
+                        <table className='calculator-table' style={{width: 'auto'}}>
                             <tbody>
                                 <tr>
-                                    <td className='history' colSpan={4}>{currentEquation}</td>
+                                    <td className='calculator-button history' colSpan={4}>{currentEquation}</td>
                                 </tr>
                                 <tr>
-                                    <td className='display' colSpan={4}>{currentNumber}</td>
+                                    <td className='calculator-button display' colSpan={4}>{currentNumber}</td>
                                 </tr>
                                 <tr>
-                                    <td className='hoverable-column option' onClick={handleClear}>C</td>
-                                    <td className='option'></td>
-                                    <td className='option'></td>
-                                    <td className='hoverable-column operation' onClick={() => handleOperation('/')}>÷</td>
+                                    <td className='calculator-button hoverable option' onClick={handleClear}>C</td>
+                                    <td className='calculator-button option'></td>
+                                    <td className='calculator-button option'></td>
+                                    <td className='calculator-button hoverable operation' onClick={() => handleOperation('/')}>÷</td>
                                 </tr>
                                 <tr>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(7)}>7</td>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(8)}>8</td>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(9)}>9</td>
-                                    <td className='hoverable-column operation' onClick={() => handleOperation('*')}>*</td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(7)}>7</td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(8)}>8</td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(9)}>9</td>
+                                    <td className='calculator-button hoverable operation' onClick={() => handleOperation('*')}>*</td>
                                 </tr>
                                 <tr>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(4)}>4</td>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(5)}>5</td>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(6)}>6</td>
-                                    <td className='hoverable-column operation' onClick={() => handleOperation('-')}><span>&#8722;</span></td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(4)}>4</td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(5)}>5</td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(6)}>6</td>
+                                    <td className='calculator-button hoverable operation' onClick={() => handleOperation('-')}><span>&#8722;</span></td>
                                 </tr>
                                 <tr>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(1)}>1</td>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(2)}>2</td>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(3)}>3</td>
-                                    <td className='hoverable-column operation' onClick={() => handleOperation('+')}>+</td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(1)}>1</td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(2)}>2</td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(3)}>3</td>
+                                    <td className='calculator-button hoverable operation' onClick={() => handleOperation('+')}>+</td>
                                 </tr>
                                 <tr>
-                                    <td className='number'></td>
-                                    <td className='hoverable-column number' onClick={() => handleNumber(0)}>0</td>
-                                    <td className='number'></td>
-                                    <td className='hoverable-column equals' onClick={performOperation}>=</td>
+                                    <td className='calculator-button number'></td>
+                                    <td className='calculator-button hoverable number' onClick={() => handleNumber(0)}>0</td>
+                                    <td className='calculator-button number'></td>
+                                    <td className='calculator-button hoverable equals' onClick={performOperation}>=</td>
                                 </tr>
                             </tbody>
                         </table>

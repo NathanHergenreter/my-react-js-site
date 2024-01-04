@@ -1,0 +1,15 @@
+.tile {
+    font-size: 80px;
+    color: black !important;
+    border-bottom: 25px black !important;
+    border-right: 25px black !important;
+
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}

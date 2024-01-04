@@ -5,6 +5,7 @@ import Calculator from "./Components/Calculator/Calculator";
 import FunThingsHome from "./Components/FunThingsHome/FunThingsHome";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
+import TicTacToe from "./Components/TicTacToe/TicTacToe";
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/fun-things" element={<FunThingsHome />} />
         <Route path="/fun-things/calculator" element={<Calculator />} />
+        <Route path="/fun-things/tic-tac-toe" element={<TicTacToe />} />
       </Routes>
     </BrowserRouter>
   );
