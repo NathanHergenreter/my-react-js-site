@@ -1,4 +1,5 @@
 import calculatorPNG from '../../Assets/Images/calculator.png';
+import ticTacToePNG from '../../Assets/Images/tic-tac-toe.png';
 
 import './FunThingsHome.css'
 
@@ -21,7 +22,7 @@ function FunThingsHome() {
             </p></a>
         </div>
         <div className='container text-center'>
-            <a href='/fun-things/tic-tac-toe'><img className='mx-auto d-block py-3 hero-image' src={calculatorPNG} alt='Tic-Tac-Toe'></img></a>
+            <a href='/fun-things/tic-tac-toe'><img className='mx-auto d-block py-3 hero-image' src={ticTacToePNG} alt='Tic-Tac-Toe'></img></a>
             <a href='/fun-things/tic-tac-toe'><h4 className='fun-thing-text'>Tic-Tac-Toe</h4></a>
             <a href='/fun-things/tic-tac-toe'><p className='fun-thing-text'>
                 Tic-Tac-Toe! I hope you know the rules because I don't feel like telling you.
