@@ -1,0 +1,22 @@
+.navbar {
+}
+
+/* Navbar */
+.nav-item {
+    padding-left: 3rem;
+}
+  
+.nav-link {
+    color: #b5b5b5;
+    font-size: larger !important;
+    font-weight: 500 !important;
+}
+
+.nav-link.active {
+    color: rgb(43, 43, 43) !important;
+}
+
+.nav-link:hover {
+    color: rgb(221, 221, 221);
+
+}
