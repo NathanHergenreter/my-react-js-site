@@ -13,21 +13,57 @@ code {
 }
 
 /* Custom Global CSS */
+:root {
+  --my-text-primary: rgb(148, 148, 148);
+  --my-text-heading: rgb(34, 34, 34);
+  --my-text-link: rgb(98, 103, 177);
+  --my-text-link-hover: rgb(119, 125, 216);
+}
+
 .container {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
+* {
+  color: var(--my-text-primary);
+}
+
+a {
+  color: var(--my-text-link) !important;
+}
+
+a:hover {
+  color: var(--my-text-link-hover) !important;
+}
+
+/* Global classes */
+.text-my-primary {
+  color: var(--my-text-primary) !important;
+}
+
 /* Background Colors */
 .bg-main {
-  background-color: white;
+  background-color: rgb(241, 241, 241);
+
+  h1 {
+    color: var(--my-text-heading) !important;
+  }
 }
 
 .bg-alt {
-  background-color: gainsboro;
+  background-color: rgb(231, 231, 231);
+
+  h1 {
+    color: var(--my-text-heading) !important;
+  }
 }
 
 .bg-bold {
-  background-color: dimgray;
-  color:floralwhite;
+  background-color: rgb(161, 161, 161);
+  color:floralwhite !important;
+
+  h1 {
+    color:floralwhite !important;
+  }
 }
