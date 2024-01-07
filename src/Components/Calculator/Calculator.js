@@ -82,7 +82,7 @@ function Calculator() {
     }
 
     return (
-    <div className='bg-main'>
+    <div className='bg-alt'>
         <div className="bg-bold">
             <div className='container'>
                 <h1>Calculator</h1>
@@ -124,7 +124,7 @@ function Calculator() {
                                     <td className='calculator-button hoverable number' onClick={() => handleNumber(4)}>4</td>
                                     <td className='calculator-button hoverable number' onClick={() => handleNumber(5)}>5</td>
                                     <td className='calculator-button hoverable number' onClick={() => handleNumber(6)}>6</td>
-                                    <td className='calculator-button hoverable operation' onClick={() => handleOperation('-')}><span>&#8722;</span></td>
+                                    <td className='calculator-button hoverable operation' onClick={() => handleOperation('-')}>&#8722;</td>
                                 </tr>
                                 <tr>
                                     <td className='calculator-button hoverable number' onClick={() => handleNumber(1)}>1</td>
