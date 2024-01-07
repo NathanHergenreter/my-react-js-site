@@ -3,16 +3,20 @@
 }
   
 .nav-link {
-    color: #b5b5b5;
+    color: #b5b5b5 !important;
     font-size: larger !important;
     font-weight: 500 !important;
-}
-
-.nav-link.active {
-    color: rgb(43, 43, 43) !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    text-transform: uppercase !important;
 }
 
 .nav-link:hover {
-    color: rgb(221, 221, 221);
+    color: rgb(221, 221, 221) !important;
 
+}
+
+/* NOTE - placement here matters, this needs to come *after* .nav-link:hover so we don't get highlighting on hover */
+.nav-link.active {
+    color: rgb(82, 82, 82) !important;
 }
