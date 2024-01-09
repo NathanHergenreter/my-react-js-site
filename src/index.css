@@ -1,3 +1,14 @@
+/* Custom Global CSS */
+:root {
+  --my-bg-main: rgb(241, 241, 241);
+  --my-bg-alt: rgb(235, 235, 235);
+  --my-bg-bold: rgb(194, 194, 194);
+  --my-text-primary: rgb(117, 117, 117);
+  --my-text-heading: rgb(34, 34, 34);
+  --my-text-link: rgb(98, 103, 177);
+  --my-text-link-hover: rgb(119, 125, 216);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,22 +18,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,body {
+  background-color: var(--my-bg-main) !important;
+  height: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-/* Custom Global CSS */
-:root {
-  --my-text-primary: rgb(148, 148, 148);
-  --my-text-heading: rgb(34, 34, 34);
-  --my-text-link: rgb(98, 103, 177);
-  --my-text-link-hover: rgb(119, 125, 216);
-}
-
 .container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 * {
@@ -44,7 +52,7 @@ a:hover {
 
 /* Background Colors */
 .bg-main {
-  background-color: rgb(241, 241, 241);
+  background-color: var(--my-bg-main) !important;
 
   h1 {
     color: var(--my-text-heading) !important;
@@ -52,7 +60,7 @@ a:hover {
 }
 
 .bg-alt {
-  background-color: rgb(231, 231, 231);
+  background-color: var(--my-bg-alt);
 
   h1 {
     color: var(--my-text-heading) !important;
@@ -60,7 +68,7 @@ a:hover {
 }
 
 .bg-bold {
-  background-color: rgb(161, 161, 161);
+  background-color: var(--my-bg-bold);
   color:floralwhite !important;
 
   h1 {
