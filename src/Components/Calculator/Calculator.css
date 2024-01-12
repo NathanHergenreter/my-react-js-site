@@ -79,3 +79,7 @@ td.hoverable:hover {
 .calculator-table>tfoot:not(:last-child) {
  border-bottom: 5px solid white;
 }
+
+td.display, td.history {
+    border-bottom: 0px !important;
+}
